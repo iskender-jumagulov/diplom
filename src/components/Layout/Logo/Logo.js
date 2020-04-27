@@ -6,6 +6,6 @@ export default () => (
    <div className={classes.logo}>
       <img src={logo}/>
       <span>
-everything for travel</span>
+Everything for travel</span>
    </div>
 );

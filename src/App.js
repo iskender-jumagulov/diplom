@@ -1,12 +1,15 @@
 import React from 'react';
+import Layout from './components/Layout/Layout';
 import './App.css';
 
-function App() {
+export default () => {
   return (
     <div className="App">
-      Diplom by Iskender Zhumagulov
+      <Layout>
+      
+      </Layout>
     </div>
   );
-}
+};
 
-export default App;
+
