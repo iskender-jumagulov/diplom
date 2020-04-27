@@ -1,0 +1,22 @@
+.Modal {
+  width: 90%;
+  padding: 30px;
+  position: absolute;
+  z-index: 500;
+  top: 180px;
+  background-color: white;
+  border: 1 px solid black;
+
+  transition: all 0.5s ease-out;
+  opacity: 0;
+  transform: translateY(-100vh);
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (min-width: 500px) {
+  .Modal {
+    width: 500px;
+  }
+}
