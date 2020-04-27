@@ -1,3 +1,8 @@
-.Toolbar {
-    background-color: green;
-  }
+.Toolbar  {
+  display: flex;
+  justify-content: space-between;
+  min-height: 40px;
+
+  background-color: rgba(44, 146, 44, 0.514);
+  
+}
