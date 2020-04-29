@@ -1,0 +1,22 @@
+.Drawer .content {
+    width: 260px;
+    height: 100%;
+    background-color: #bcf15a;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: small;
+  }
+  .Open {
+    transform: translateX(0);
+  }
+  .Closed {
+    transform: translateX(-260px);
+  }
+  @media (min-width: 500px) {
+    .Drawer {
+      display: none;
+    }
+  }
