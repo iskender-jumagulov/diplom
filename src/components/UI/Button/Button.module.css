@@ -1,0 +1,20 @@
+.Button {
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+  border: none;
+  margin-right: 5px;
+  background-color: white;
+  color: #577e4e;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.Button:disabled {
+  opacity: 0.5;
+}
+
+.Button:not(:disabled):hover {
+  opacity: 0.8;
+}

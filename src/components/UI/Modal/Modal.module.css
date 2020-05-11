@@ -1,0 +1,26 @@
+.Modal {
+  width: 90%;
+  padding: 1rem;
+  position: absolute;
+  z-index: 500;
+  font-size: 0.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  top: 100px;
+  background-color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.137);
+
+  transition: all 0.5s ease-out;
+  opacity: 0;
+  transform: translateY(-100vh);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 400px) {
+  .Modal {
+    width: 500px;
+  }
+}

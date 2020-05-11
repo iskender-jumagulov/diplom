@@ -1,0 +1,41 @@
+.Flower {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+.camera {
+  background-image: url(../../../../assets/tiny.png);
+  background-size: cover;
+}
+
+.matches {
+  background-image: url(../../../../assets/matches.svg);
+  background-size: cover;
+}
+
+.water {
+  background-image: url(../../../../assets/water.svg);
+  background-size: cover;
+}
+
+.medicinechest {
+  background-image: url(../../../../assets/medicinechest.svg);
+  background-size: cover;
+}
+
+.tent{
+  background-image: url(../../../../assets/tent.svg);
+  background-size: cover;
+}
+
+.flashlight {
+  background-image: url(../../../../assets/flashlight.svg);
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .Flower {
+    width: 20px;
+    height: 20px;
+  }
+}

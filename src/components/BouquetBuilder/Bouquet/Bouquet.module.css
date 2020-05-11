@@ -1,0 +1,46 @@
+.Bouquet {
+  padding: 0 0.5rem;
+}
+
+.Bouquet .bento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-flow: wrap;
+  align-items: center;
+
+  background-image: url(../../../assets/49a8da7c-722f-4db4-bdf2-e2a9da897a60.jpg);
+  background-size: cover;
+  width: 400px;
+  height: 320px;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.Bouquet .price {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #397834;
+  font-family: "Tangerine", cursive;
+}
+
+.Bouquet .flowerBento {
+  position: relative;
+  padding: 10px;
+  width: 190px;
+  height: 130px;
+  border: 1px solid transparent;
+  border-radius: 70%;
+  background-color: transparent;
+}
+
+@media (max-width: 650px) {
+  .Bouquet .bento {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 200px;
+    margin-left: 10px;
+  }
+}
