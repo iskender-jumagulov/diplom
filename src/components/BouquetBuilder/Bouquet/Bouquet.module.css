@@ -12,7 +12,7 @@
   background-image: url(../../../assets/49a8da7c-722f-4db4-bdf2-e2a9da897a60.jpg);
   background-size: cover;
   width: 400px;
-  height: 370px;
+  height: 320px;
   margin: 0 auto;
   padding-bottom: 0;
 }
@@ -27,8 +27,8 @@
 .Bouquet .flowerBento {
   position: relative;
   padding: 10px;
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 130px;
   border: 1px solid transparent;
   border-radius: 70%;
   background-color: transparent;
@@ -39,7 +39,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 380px;
-    height: 200px;
-    margin-left: 10px;
-  }
+    height: 300px;
+    margin-left: 100px;
+    margin-top:60px }
 }

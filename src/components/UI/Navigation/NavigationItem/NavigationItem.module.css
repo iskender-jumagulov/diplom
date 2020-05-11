@@ -15,10 +15,25 @@
 }
 
 .NavigationItem a:hover {
-  border-bottom-color: royalblue;
-  background-color: rgba(0, 0, 0, 0.109);
-  
+  transition: .5s;
+	transition-delay: .5s;
+	color: white;
+	background: black;
+	box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
 }
+
+.NavigationItem a::before{
+  content: "";
+	background: linear-gradient(-1000deg, transparent, black);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 5000%;
+	top: 90%;
+}
+
+  
+
 .NavigationItem .active {
   background-color: rgba(0, 0, 0, 0.041);
 }

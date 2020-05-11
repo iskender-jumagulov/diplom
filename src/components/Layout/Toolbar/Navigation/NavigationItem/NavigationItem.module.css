@@ -17,6 +17,7 @@
 .NavigationItem a:hover {
   border-bottom-color: black;
   background-color: rgba(0, 0, 0, 0.109);
+  
 }
 .NavigationItem .active {
   border-bottom-color: black;
