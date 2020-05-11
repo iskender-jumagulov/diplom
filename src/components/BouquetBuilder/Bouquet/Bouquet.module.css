@@ -12,24 +12,23 @@
   background-image: url(../../../assets/49a8da7c-722f-4db4-bdf2-e2a9da897a60.jpg);
   background-size: cover;
   width: 400px;
-  height: 320px;
+  height: 370px;
   margin: 0 auto;
   padding-bottom: 0;
 }
 
 .Bouquet .price {
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 2rem;
   text-align: center;
-  color: #397834;
-  font-family: "Tangerine", cursive;
+  color: black;
+  font-family: 'Baloo 2', cursive;
 }
 
 .Bouquet .flowerBento {
   position: relative;
   padding: 10px;
-  width: 190px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
   border: 1px solid transparent;
   border-radius: 70%;
   background-color: transparent;
