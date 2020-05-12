@@ -1,8 +1,8 @@
-.Bouquet {
+.Bag {
   padding: 0 0.5rem;
 }
 
-.Bouquet .bento {
+.Bag .bento {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,14 +17,14 @@
   padding-bottom: 0;
 }
 
-.Bouquet .price {
+.Bag .price {
   font-size: 2rem;
   text-align: center;
   color: black;
   font-family: 'Baloo 2', cursive;
 }
 
-.Bouquet .flowerBento {
+.Bag .subjectBento {
   position: relative;
   padding: 10px;
   width: 190px;
@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 650px) {
-  .Bouquet .bento {
+  .Bag .bento {
     background-size: contain;
     background-repeat: no-repeat;
     width: 380px;

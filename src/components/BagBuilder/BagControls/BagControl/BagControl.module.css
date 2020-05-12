@@ -1,17 +1,17 @@
-.BouquetControl {
+.BagControl {
   display: flex;
   align-items: center;
   margin-top: 8px;
 }
 
-.BouquetControl .label {
+.BagControl .label {
   color: rgb(0, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   padding: 0.8rem;
 }
 
-.BouquetControl button {
+.BagControl button {
   width: 30px;
   height: 30px;
   border: none;
@@ -21,16 +21,16 @@
   cursor: pointer;
 }
 
-.BouquetControl button:disabled {
+.BagControl button:disabled {
   opacity: 0.5;
 }
 
-.BouquetControl button:not(:disabled):hover {
+.BagControl button:not(:disabled):hover {
   opacity: 0.8;
 }
 
 @media (max-width: 650px) {
-  .BouquetControl .label {
+  .BagControl .label {
     font-size: 0.9rem;
   }
 }

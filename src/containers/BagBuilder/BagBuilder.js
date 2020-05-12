@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import Bouquet from "../../components/BouquetBuilder/Bouquet/Bouquet";
-import classes from "./BouquetBuilder.module.css";
-import BouquetControls from "../../components/BouquetBuilder/BouquetControls/BouquetControls";
+import Bag from "../../components/BagBuilder/Bag/Bag";
+import classes from "./BagBuilder.module.css";
+import BagControls from "../../components/BagBuilder/BagControls/BagControls";
 import Modal from "../../components/UI/Modal/Modal";
-import OrderSummary from "../../components/BouquetBuilder/OrderSummary/OrderSummary";
+import OrderSummary from "../../components/BagBuilder/OrderSummary/OrderSummary";
 import axios from "../../axios";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/withErrorHadler/withErrorHadler";
 
 const PRICES = {
   camera: 2000,
-  matches: 5,
+  matches: 55,
   water: 45,
   medicinechest: 200,
   tent: 400,
@@ -19,15 +19,15 @@ const PRICES = {
 
 
 export default withErrorHandler(() => {
-  const [flowers, setFlowers] = useState(null);
+  const [subjects, setSubject] = useState(null);
   const [price, setPrice] = useState(80);
   const [canOrder, setCanOrder] = useState(false);
   const [isOrdering, setIsOrdering] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  function checkCanOrder(flowers) {
-    const total = Object.keys(flowers).reduce((total, flower) => {
-      return total + flowers[flower];
+  function checkCanOrder(subjects) {
+    const total = Object.keys(subjects).reduce((total, subject) => {
+      return total + subjects[subject];
     }, 0);
     setCanOrder(total > 0);
   }
@@ -42,12 +42,12 @@ export default withErrorHandler(() => {
 
   function finishOrder() {
     const order = {
-      flowers: flowers,
+      subjects: subjects,
       price: price,
       delivery: "Fast",
       customer: {
-        name: "Jasmin",
-        phone: "070707070",
+        name: "iskender",
+        phone: "0707893045",
         address: {
           street: "123 Abd",
           city: "Karakol",
@@ -62,22 +62,22 @@ export default withErrorHandler(() => {
     });
   }
 
-  function addFlowers(type) {
-    const newFlowers = { ...flowers };
-    newFlowers[type]++;
-    setFlowers(newFlowers);
-    checkCanOrder(newFlowers);
+  function addSubjects(type) {
+    const newSubjects = { ...subjects };
+    newSubjects[type]++;
+    setSubject(newSubjects)
+    checkCanOrder(newSubjects);
 
     const newPrice = price + PRICES[type];
     setPrice(newPrice);
   }
 
-  function removeFlowers(type) {
-    if (flowers[type] >= 1) {
-      const newFlowers = { ...flowers };
-      newFlowers[type]--;
-      setFlowers(newFlowers);
-      checkCanOrder(newFlowers);
+  function removeSubjects(type) {
+    if (subjects[type] >= 1) {
+      const newSubjects = { ...subjects };
+      newSubjects[type]--;
+      setSubject(newSubjects);
+      checkCanOrder(newSubjects);
 
       const newPrice = price - PRICES[type];
       setPrice(newPrice);
@@ -87,21 +87,21 @@ export default withErrorHandler(() => {
   useEffect(() => {
     axios
       .get("/flowers.json")
-      .then((response) => setFlowers(response.data))
+      .then((response) => setSubject(response.data))
       .catch((error) => {});
   }, []);
 
   let output = <Spinner />;
-  if (flowers) {
+  if (subjects) {
     output = (
       <>
-        <Bouquet price={price} flowers={flowers} />
-        <BouquetControls
+        <Bag price={price} subjects={subjects} />
+        <BagControls
           startOrder={startOrder}
           canOrder={canOrder}
-          flowers={flowers}
-          addFlowers={addFlowers}
-          removeFlowers={removeFlowers}
+          subjects={subjects}
+          addSubjects={addSubjects}
+          removeSubjects={removeSubjects}
         />
       </>
     );
@@ -112,14 +112,14 @@ export default withErrorHandler(() => {
       <OrderSummary
         cancelOrder={cancelOrder}
         finishOrder={finishOrder}
-        flowers={flowers}
+        subjects={subjects}
         price={price}
       />
     );
   }
 
   return (
-    <div className={classes.BouquetBuilder}>
+    <div className={classes.BagBuilder}>
       {output}
       <Modal show={isOrdering} hideCallBack={cancelOrder}>
         {orderSummary}

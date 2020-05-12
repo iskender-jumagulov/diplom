@@ -3,20 +3,20 @@ import classes from "./OrderSummary.module.css";
 import Button from "../../UI/Button/Button";
 
 const LABELS = {
-  cameras: "Camera",
-  matchess: "Matches",
-  waters: "Water",
-  medicinechests: "Medicinechest",
-  tents: "Tent",
-  flashlights: "Flashlight",
+  camera: "Camera",
+  matches: "Matches",
+  water: "Water",
+  medicinechest: "Medicinechest",
+  tent: "Tent",
+  flashlight: "Flashlight",
 };
 
-export default ({ flowers, cancelOrder, finishOrder, price }) => {
-  const flowersOutput = Object.keys(flowers)
-    .filter((flower) => flowers[flower] > 0)
-    .map((flower) => (
-      <li key={flowers}>
-        {LABELS[flower]}: {flowers[flower]}{" "}
+export default ({ subjects, cancelOrder, finishOrder, price }) => {
+  const subjectsOutput = Object.keys(subjects)
+    .filter((subject) => subjects[subject] > 0)
+    .map((subject) => (
+      <li key={subjects}>
+        {LABELS[subject]}: {subjects[subject]}{" "}
       </li>
     ));
 
@@ -24,7 +24,7 @@ export default ({ flowers, cancelOrder, finishOrder, price }) => {
     <div className={classes.OrderSummary}>
       <h2>Congratulations! </h2>
       <p>Here is the composition of your bag:</p>
-      <ul>{flowersOutput}</ul>
+      <ul>{subjectsOutput}</ul>
       <p>Total price: {price} som.</p>
       <p>Would you like to checkout? </p>
       <Button click={finishOrder}>Checkout</Button>

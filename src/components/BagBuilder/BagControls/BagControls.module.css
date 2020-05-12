@@ -1,4 +1,4 @@
-.BouquetControls {
+.BagControls {
   background-color: white;
   width: 300px;
   padding-top: 0.5rem;
@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 650px) {
-  .BouquetControls {
+  .BagControls {
     margin-top: 20px;
   }
 }

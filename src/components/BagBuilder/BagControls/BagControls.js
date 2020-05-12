@@ -1,6 +1,6 @@
 import React from "react";
-import classes from "./BouquetControls.module.css";
-import BouquetControl from "./BouquetControl/BouquetControl";
+import classes from "./BagControls.module.css";
+import BagControl from "./BagControl/BagControl";
 import Button from "../../UI/Button/Button";
 
 const CONTROLS = [
@@ -14,23 +14,23 @@ const CONTROLS = [
 
 export default ({
   canOrder,
-  flowers,
-  addFlowers,
-  removeFlowers,
+  subjects,
+  addSubjects,
+  removeSubjects,
   startOrder,
 }) => {
   const controlsOutput = CONTROLS.map((control) => (
-    <BouquetControl
+    <BagControl
       key={control.type}
       control={control}
-      addFlowers={addFlowers}
-      removeFlowers={removeFlowers}
-      disabled={flowers[control.type] === 0}
+      addSubjects={addSubjects}
+      removeSubjects={removeSubjects}
+      disabled={subjects[control.type] === 0}
     />
   ));
 
   return (
-    <div className={classes.BouquetControls}>
+    <div className={classes.BagControls}>
       {controlsOutput}
       <Button click={startOrder} enabled={canOrder}>
         Order

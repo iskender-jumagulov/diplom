@@ -1,4 +1,4 @@
-.Flower {
+.Subjects {
   box-sizing: border-box;
   background-repeat: no-repeat;
 }
@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 600px) {
-  .Flower {
+  .Subjects {
     width: 20px;
     height: 20px;
   }

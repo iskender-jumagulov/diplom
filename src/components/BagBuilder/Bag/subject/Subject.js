@@ -1,8 +1,8 @@
 import React, { memo } from "react";
-import classes from "./Flower.module.css";
+import classes from "./Subject.module.css";
 
 export default memo(({ type }) => {
-  const flowersClasses = [classes.flowers, classes 
+  const subjectsClasses = [classes.subjects, classes 
     [type]];
 
   let stylePos = null;
@@ -21,23 +21,23 @@ export default memo(({ type }) => {
 
   switch (type) {
     case "camera":
-      flowersClasses.push(classes.camera);
+      subjectsClasses.push(classes.camera);
       break;
     case "matches":
-      flowersClasses.push(classes.matches);
+      subjectsClasses.push(classes.matches);
       break;
     case "water":
-      flowersClasses.push(classes.water);
+      subjectsClasses.push(classes.water);
       break;
     case "medicinechest":
-      flowersClasses.push(classes.medicinechest);
+      subjectsClasses.push(classes.medicinechest);
       break;
     case "tent":
-      flowersClasses.push(classes.tent);
+      subjectsClasses.push(classes.tent);
       break;
     case "flashlight":
     default:
-      flowersClasses.push(classes.flashlight);
+      subjectsClasses.push(classes.flashlight);
       break;
   }
 
@@ -53,5 +53,5 @@ export default memo(({ type }) => {
     height: 40 + "px",
   };
 
-  return <div style={stylePos} className={flowersClasses.join(" ")}></div>;
+  return <div style={stylePos} className={subjectsClasses.join(" ")}></div>;
 });

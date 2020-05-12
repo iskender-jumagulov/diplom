@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-import BouquetBuilder from "./containers/BouquetBuilder/BouquetBuilder";
+import BagBuilder from "./containers/BagBuilder/BagBuilder";
 import Layout from "./containers/Layout/Layout";
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        <BouquetBuilder />
+        <BagBuilder />
       </Layout>
     </div>
   );
