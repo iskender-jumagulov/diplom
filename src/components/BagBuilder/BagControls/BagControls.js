@@ -5,7 +5,7 @@ import Button from "../../UI/Button/Button";
 
 const CONTROLS = [
   { label: "Camera", type: "camera" },
-  { label: "Matches", type: "matches" },
+  { label: "Lighter", type: "lighter" },
   { label: "Water", type: "water" },
   { label: "Medicinechest", type: "medicinechest" },
   { label: "Tent", type: "tent" },

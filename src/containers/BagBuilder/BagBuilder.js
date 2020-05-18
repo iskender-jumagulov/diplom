@@ -10,7 +10,7 @@ import withErrorHandler from "../../hoc/withErrorHadler/withErrorHadler";
 
 const PRICES = {
   camera: 2000,
-  matches: 55,
+  lighter: 55,
   water: 45,
   medicinechest: 200,
   tent: 400,
