@@ -1,12 +1,12 @@
 .Toolbar {
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: #315835;
+  background-color: #3B6F40;
 }
 
 .Toolbar nav {
