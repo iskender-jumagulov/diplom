@@ -4,12 +4,12 @@
 }
 
 .camera {
-  background-image: url(../../../../assets/tiny.png);
+  background-image: url(../../../../assets/camera.svg);
   background-size: cover;
 }
 
-.matches {
-  background-image: url(../../../../assets/matches.svg);
+.flashlight {
+  background-image: url(../../../../assets/light.svg);
   background-size: cover;
 }
 

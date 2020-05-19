@@ -86,7 +86,7 @@ export default withErrorHandler(() => {
 
   useEffect(() => {
     axios
-      .get("/flowers.json")
+      .get("/subjects.json")
       .then((response) => setSubject(response.data))
       .catch((error) => {});
   }, []);
