@@ -8,13 +8,14 @@
   justify-content: center;
   flex-flow: wrap;
   align-items: center;
-
+  position: relative;
   background-image: url(../../../assets/49a8da7c-722f-4db4-bdf2-e2a9da897a60.jpg);
   background-size: cover;
   width: 400px;
   height: 380px;
   margin: 0 auto;
-  padding-bottom: 0;
+  padding-bottom: 0px;
+  left: 0px;
 }
 
 .Bag .price {
@@ -27,7 +28,7 @@
 .Bag .subjectBento {
   position: relative;
   padding: 10px;
-  width: 190px;
+  width: 300px;
   height: 130px;
   border: 1px solid transparent;
   border-radius: 70%;

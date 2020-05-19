@@ -33,7 +33,7 @@ export default ({
     <div className={classes.BagControls}>
       {controlsOutput}
       <Button click={startOrder} enabled={canOrder}>
-        Orderзсщдущ
+        Order
       </Button>
     </div>
   );

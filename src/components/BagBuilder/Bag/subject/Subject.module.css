@@ -1,11 +1,15 @@
 .Subjects {
+  position: absolute;
   box-sizing: border-box;
+  top:100px;
+  left:1000px;
   background-repeat: no-repeat;
 }
 
 .camera {
   background-image: url(../../../../assets/camera.svg);
   background-size: cover;
+ 
 }
 
 .flashlight {
