@@ -1,0 +1,30 @@
+.Order {
+    font-family: sans-serif;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.37);
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 3rem;
+  }
+  .Order .details {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .Order .price {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #c43a3a;
+    font-family: "Nanum Brush Script", cursive;
+    margin-bottom: 0.3em;
+  }
+  
+  .Order .subjects {
+    border-radius: 0.3em;
+    padding: 0.3em;
+    display: inline-block;
+    margin: 0 0.3em 0.3em 0;
+  }
+  

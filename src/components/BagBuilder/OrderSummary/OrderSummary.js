@@ -4,7 +4,7 @@ import Button from "../../UI/Button/Button";
 
 const LABELS = {
   camera: "Camera",
-  lighter: "Lighter",
+  flashlight: "Flashlight",
   water: "Water",
   medicinechest: "Medicinechest",
   tent: "Tent",

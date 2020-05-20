@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Toolbar from "../../components/Layout/Toolbar/Toolbar";
 import Drawer from "../../components/Layout/Drawer/Drawer";
 import classes from "./Layout.module.css";
-import Footer from "../../components/UI/Footer/Footer";
+;
 
 export default ({ children }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -16,7 +16,7 @@ export default ({ children }) => {
       <Toolbar toggleDrawer={toggleDrawer} />
       <Drawer open={drawerOpen} toggleDrawer={toggleDrawer} />
       <main>{children}</main>
-      <Footer />
+      
     </div>
   );
 };

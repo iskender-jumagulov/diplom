@@ -23,8 +23,8 @@ export default memo(({ type }) => {
     case "camera":
       subjectsClasses.push(classes.camera);
       break;
-    case "lighter":
-      subjectsClasses.push(classes.lighter);
+    case "flashlight":
+      subjectsClasses.push(classes.flashlight);
       break;
     case "water":
       subjectsClasses.push(classes.water);

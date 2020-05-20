@@ -1,6 +1,6 @@
 .Navigation {
   list-style-type: none;
   display: flex;
-  margin: 0 1rem;
+  margin: 100%;
   padding: 0;
-}
+ }
