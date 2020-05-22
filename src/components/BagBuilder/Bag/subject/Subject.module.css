@@ -1,9 +1,10 @@
 .Subjects {
-  position: absolute;
+  position: relative ;
   box-sizing: border-box;
-  top:100px;
-  left:1000px;
+  top:0px;
+  left:0px;
   background-repeat: no-repeat;
+  transform: translate(-140px, 130px);
 }
 
 .camera {

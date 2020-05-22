@@ -14,7 +14,7 @@ export default ({ price, subjects }) => {
   return (
     <div className={classes.Bag}>
       <div className={classes.bento}>
-        <div className={classes.subjectsBento}>{subjectsOutput}</div>
+        <div className={classes.subjectsBento}>{subjectsOutput}</div >
       </div>
       <div className={classes.price}> {price} som</div>
     </div>
