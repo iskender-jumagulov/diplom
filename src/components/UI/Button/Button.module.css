@@ -25,6 +25,7 @@
   background-color: #2c4f21ea;
   color: white;
   border: 1px solid transparent;
+  margin-left: 10px;
 }
 .red {
   background-color: rgba(117, 11, 11, 0.904);
