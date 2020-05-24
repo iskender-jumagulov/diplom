@@ -1,0 +1,2 @@
+export const ADD_SUBJECTS = "ADD_SUBJECTS";
+export const REMOVE_SUBJECTS = "REMOVE_SUBJECTS";

@@ -6,7 +6,7 @@
   font-size: 0.9rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   top: 100px;
-  background-color: black;
+  background-color: rgba(7, 161, 7, 0.685);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.137);
 
   transition: all 0.5s ease-out;

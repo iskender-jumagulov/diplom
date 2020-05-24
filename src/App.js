@@ -6,7 +6,6 @@ import Checkout from "./containers/Checkout/Checkout";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Orders from "./containers/Orders/Orders";
 
-
 function App() {
   return (
     <div className="App">
@@ -29,4 +28,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
