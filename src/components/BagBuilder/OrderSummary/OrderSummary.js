@@ -23,7 +23,7 @@ export default ({ subjects, cancelOrder, finishOrder, price }) => {
   return (
     <div className={classes.OrderSummary}>
       <h2>Congratulations! </h2>
-      <p>Here is the composition of your bag:</p>
+      <p>Here is the composition of you bag:</p>
       <ul>{subjectsOutput}</ul>
       <p>Total price: {price} som.</p>
       <p>Would you like to checkout? </p>
