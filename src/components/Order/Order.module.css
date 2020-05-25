@@ -1,30 +1,39 @@
 .Order {
     font-family: sans-serif;
-    border-bottom: 3px solid rgba(128, 128, 128, 0.37);
+    border: black solid;
     padding: 10px;
     margin: 0 auto;
     text-align: center;
     width: 500px;
     margin-bottom: 3rem;
+    display: block;
   }
   .Order .details {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    display: flex;
+    
+    margin: auto;
+    flex-flow: row wrap;
   }
   
   .Order .price {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #c43a3a;
-    font-family: "Nanum Brush Script", cursive;
+    color: black;
+    font-family: 'Overpass Mono', monospace;
     margin-bottom: 0.3em;
   }
   
   .Order .subjects {
     border-radius: 0.3em;
     padding: 0.3em;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+    
     margin: 0 0.3em 0.3em 0;
   }
   

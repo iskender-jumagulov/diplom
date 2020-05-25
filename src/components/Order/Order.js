@@ -33,8 +33,9 @@ export default ({ price, subjects, details }) => {
   return (
     <div className={classes.Order}>
       {detailsOutput}
-      <div className={classes.price}>{price} som</div>
+      
       <div className={classes.subjects}>{subjectsOutput}</div>
+      <div className={classes.price}>{price} som</div>
     </div>
   );
 };
