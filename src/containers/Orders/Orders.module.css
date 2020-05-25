@@ -1,5 +1,5 @@
 .Orders {
-    display: block;
+    display:block;
     flex-flow: row wrap;
     padding: 0.5em;
     max-width: 850px;
