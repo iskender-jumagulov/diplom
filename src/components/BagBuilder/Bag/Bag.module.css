@@ -36,8 +36,15 @@
   .Bag .bento {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 380px;
+    width: 400px;
     height: 300px;
     margin-left: 100px;
     margin-top:60px }
+}
+@media (max-width: 880px){}
+.Bag .subjectsBento {
+  position: relative;
+  top:0px;
+  left:0px;
+  transform: translate(-190px, -150px);
 }
