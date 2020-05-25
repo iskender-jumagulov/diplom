@@ -13,5 +13,11 @@
 .Logo span {
   font-family: 'Baloo 2', cursive;
   color: rgb(0, 0, 0);
-  font-size: 3rem;
+  font-size: 2.6rem;
+}
+@media (max-width: 880px) {
+  .Logo span {
+    font-size: 28px;
+  
+}
 }

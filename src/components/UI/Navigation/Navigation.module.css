@@ -3,12 +3,13 @@
   display: flex;
   margin: 10px 0;
   padding: 0;
-  flex-direction: column;
+  
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   .Navigation {
     margin: 0 12px;
     flex-direction: row;
+    white-space: nowrap; 
   }
 }
