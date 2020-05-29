@@ -27,7 +27,7 @@ export default withErrorHandler(() => {
 
   return (
     <div className={classes.Orders}>
-      <h1>Orders</h1>
+      <h1>Order</h1>
       {ordersOutput}
     </div>
   );
